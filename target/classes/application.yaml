@@ -1,0 +1,4 @@
+#calculator:
+#  lhs: 11
+#  rhs: 99
+#  op: "*"
