@@ -15,13 +15,13 @@ public class DemoApplication {
         SpringApplication.run(DemoApplication.class, args);
     }
 
-    @Bean
-    public ApplicationRunner calculationRunner(Calculator calculator,
-                                               @Value("${calculator.lhs:322}") int lhs,
-                                               @Value("${calculator.rhs:228}") int rhs,
-                                               @Value("${calculator.op:+}") String op) {
-        return args -> {
-            calculator.calculate(lhs, rhs, op);
-        };
-    }
+//    @Bean
+//    public ApplicationRunner calculationRunner(Calculator calculator,
+//                                               @Value("${calculator.lhs:322}") int lhs,
+//                                               @Value("${calculator.rhs:228}") int rhs,
+//                                               @Value("${calculator.op:+}") String op) {
+//        return args -> {
+//            calculator.calculate(lhs, rhs, op);
+//        };
+//    }
 }

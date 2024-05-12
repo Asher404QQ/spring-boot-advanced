@@ -13,8 +13,8 @@ public class Calculator {
         this.operations = operations;
     }
 
-    public void calculate(int lhs, int rhs, String op) {
-        operations.stream()
+    public int calculate(int lhs, int rhs, String op) {
+        return operations.stream()
                 .filter(operation -> operation.handles(op))
                 .map(operation -> operation.apply(lhs, rhs))
                 .peek(result -> System.out.printf("%d %s %d = %s%n", lhs, op, rhs, result))
