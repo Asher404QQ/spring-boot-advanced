@@ -2,3 +2,11 @@
 #  lhs: 11
 #  rhs: 99
 #  op: "*"
+logging:
+  file:
+    path: /var/log
+    name: application.log
+  level:
+    org:
+      springframework:
+        web: debug
