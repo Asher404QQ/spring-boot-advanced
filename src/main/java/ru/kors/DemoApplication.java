@@ -7,14 +7,24 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ImportResource;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.jdbc.core.JdbcTemplate;
 import ru.kors.calculator.Calculator;
 
-//@PropertySource(value = "classpath:my-customer.properties", ignoreResourceNotFound = true)
+@PropertySource(value = "classpath:my-customer.properties", ignoreResourceNotFound = true)
 @SpringBootApplication
-@ImportResource("classpath:application-context.xml")
+//@ImportResource("classpath:application-context.xml")
 public class DemoApplication {
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
+    }
+
+    @Bean
+    public ApplicationRunner lister(JdbcTemplate template) {
+        return args -> {
+            template.query("select * from pg_catalog.pg_tables", rs -> {
+                System.out.printf("Table: %s.%s%n", rs.getString(1), rs.getString(2));
+            });
+        };
     }
 
 //    @Bean
