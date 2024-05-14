@@ -46,6 +46,36 @@ class BookControllerTest {
     }
 
     @Test
+    void shouldReturnViewListOfBooks() throws Exception {
+        when(service.findAll()).thenReturn(books.values());
+        mockMvc.perform(get("/api/v1/books/library.html"))
+                .andExpect(status().isOk())
+                .andExpect(view().name("books/list"))
+                .andExpect(model().attribute("books", Matchers.hasSize(3)));
+    }
+
+    @Test
+    void shouldReturnViewBookByISBN() throws Exception{
+        String isbn = "123";
+        when(service.findByISBN(anyString())).thenReturn(Optional.of(books.get(isbn)));
+
+        mockMvc.perform(get("/api/v1/books/library.html").param("isbn", isbn))
+                .andExpect(status().isOk())
+                .andExpect(view().name("books/details"))
+                .andExpect(model().attribute("book", Matchers.is(books.get(isbn))));
+    }
+
+    @Test
+    void shouldReturnEmptyViewByNotFoundBook() throws Exception {
+        when(service.findByISBN(anyString())).thenReturn(Optional.empty());
+
+        mockMvc.perform(get("/api/v1/books/library.html").param("isbn", anyString()))
+                .andExpect(status().isOk())
+                .andExpect(view().name("books/details"))
+                .andExpect(model().attributeDoesNotExist("book"));
+    }
+
+    @Test
     void shouldReturnAllBooks() throws Exception {
         when(service.findAll()).thenReturn(books.values());
 

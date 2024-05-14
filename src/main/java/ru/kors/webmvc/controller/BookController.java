@@ -1,12 +1,14 @@
 package ru.kors.webmvc.controller;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 import ru.kors.webmvc.model.Book;
 import ru.kors.webmvc.service.BookService;
 
-@RestController
+@Controller
 @RequestMapping("/api/v1/books")
 public class BookController {
     private final BookService service;
@@ -15,8 +17,20 @@ public class BookController {
         this.service = service;
     }
 
+    @GetMapping("/library.html")
+    public String all(Model model) {
+        model.addAttribute("books", service.findAll());
+        return "books/list";
+    }
+
+    @GetMapping(value = "/library.html", params = "isbn")
+    public String get(@RequestParam String isbn, Model model) {
+        service.findByISBN(isbn).ifPresent(book -> model.addAttribute("book", book));
+        return "books/details";
+    }
+
     @PostMapping("/save")
-    public ResponseEntity<Book> save(@RequestBody Book book,
+    @ResponseBody public ResponseEntity<Book> save(@RequestBody Book book,
                                      UriComponentsBuilder builder) {
         return ResponseEntity.created(
                 builder.path("/api/v1/books/{isbn}").build(book.isbn())
@@ -24,12 +38,12 @@ public class BookController {
     }
 
     @GetMapping("/{isbn}")
-    public ResponseEntity<Book> findByISBN(@PathVariable String isbn) {
+    @ResponseBody public ResponseEntity<Book> findByISBN(@PathVariable String isbn) {
         return ResponseEntity.of(service.findByISBN(isbn));
     }
 
     @GetMapping
-    public Iterable<Book> findAll() {
+    @ResponseBody public Iterable<Book> findAll() {
         return service.findAll();
     }
 }

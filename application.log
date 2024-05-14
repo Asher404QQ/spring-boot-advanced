@@ -1086,3 +1086,393 @@ empty compose file
 2024-05-13T20:29:54.106+03:00 DEBUG 18544 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
 2024-05-13T20:29:54.107+03:00 DEBUG 18544 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Book{isbn='312', title='Три товарища', authors=[Эрих Мария Ремарк]}]
 2024-05-13T20:29:54.114+03:00 DEBUG 18544 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@54657dd2, started on Mon May 13 20:29:51 MSK 2024
+2024-05-14T16:42:45.555+03:00  INFO 11776 --- [restartedMain] r.k.DemoApplication                      : Starting DemoApplication using Java 21.0.3 with PID 11776 (D:\Java\spring-boot-recipes\target\classes started by Asher in D:\Java\spring-boot-recipes)
+2024-05-14T16:42:45.579+03:00  INFO 11776 --- [restartedMain] r.k.DemoApplication                      : No active profile set, falling back to 1 default profile: "default"
+2024-05-14T16:42:45.635+03:00  INFO 11776 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'D:\Java\spring-boot-recipes\docker-compose.yaml'
+2024-05-14T16:42:47.219+03:00 ERROR 11776 --- [restartedMain] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.boot.docker.compose.core.DockerNotRunningException: Docker is not running
+	at org.springframework.boot.docker.compose.core.DockerCli$DockerCommands.getDockerCommand(DockerCli.java:146) ~[spring-boot-docker-compose-3.2.5.jar:3.2.5]
+	at org.springframework.boot.docker.compose.core.DockerCli$DockerCommands.<init>(DockerCli.java:129) ~[spring-boot-docker-compose-3.2.5.jar:3.2.5]
+	at org.springframework.boot.docker.compose.core.DockerCli.lambda$new$0(DockerCli.java:65) ~[spring-boot-docker-compose-3.2.5.jar:3.2.5]
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1228) ~[?:?]
+	at org.springframework.boot.docker.compose.core.DockerCli.<init>(DockerCli.java:64) ~[spring-boot-docker-compose-3.2.5.jar:3.2.5]
+	at org.springframework.boot.docker.compose.core.DockerCompose.get(DockerCompose.java:92) ~[spring-boot-docker-compose-3.2.5.jar:3.2.5]
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.getDockerCompose(DockerComposeLifecycleManager.java:154) ~[spring-boot-docker-compose-3.2.5.jar:3.2.5]
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:110) ~[spring-boot-docker-compose-3.2.5.jar:3.2.5]
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53) ~[spring-boot-docker-compose-3.2.5.jar:3.2.5]
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35) ~[spring-boot-docker-compose-3.2.5.jar:3.2.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72) ~[spring-boot-3.2.5.jar:3.2.5]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:432) [spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333) [spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) [spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) [spring-boot-3.2.5.jar:3.2.5]
+	at ru.kors.DemoApplication.main(DemoApplication.java:18) [classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.2.5.jar:3.2.5]
+Caused by: org.springframework.boot.docker.compose.core.ProcessExitException: 'docker version --format {{.Client.Version}}' failed with exit code 1.
+
+Stdout:
+25.0.3
+
+
+Stderr:
+error during connect: this error may indicate that the docker daemon is not running: Get "http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.24/version": open //./pipe/docker_engine: The system cannot find the file specified.
+
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:96) ~[spring-boot-docker-compose-3.2.5.jar:3.2.5]
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:74) ~[spring-boot-docker-compose-3.2.5.jar:3.2.5]
+	at org.springframework.boot.docker.compose.core.DockerCli$DockerCommands.getDockerCommand(DockerCli.java:135) ~[spring-boot-docker-compose-3.2.5.jar:3.2.5]
+	... 28 more
+
+2024-05-14T16:43:33.999+03:00  INFO 8564 --- [restartedMain] r.k.DemoApplication                      : Starting DemoApplication using Java 21.0.3 with PID 8564 (D:\Java\spring-boot-recipes\target\classes started by Asher in D:\Java\spring-boot-recipes)
+2024-05-14T16:43:34.023+03:00  INFO 8564 --- [restartedMain] r.k.DemoApplication                      : No active profile set, falling back to 1 default profile: "default"
+2024-05-14T16:43:34.096+03:00  INFO 8564 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'D:\Java\spring-boot-recipes\docker-compose.yaml'
+2024-05-14T16:43:45.258+03:00  INFO 8564 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : There are already Docker Compose services running, skipping startup
+2024-05-14T16:43:45.265+03:00  INFO 8564 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-14T16:43:45.265+03:00  INFO 8564 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-14T16:43:46.245+03:00  INFO 8564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-14T16:43:46.267+03:00  INFO 8564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 JDBC repository interfaces.
+2024-05-14T16:43:46.789+03:00  INFO 8564 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2024-05-14T16:43:46.805+03:00  INFO 8564 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-14T16:43:46.807+03:00  INFO 8564 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-14T16:43:46.854+03:00  INFO 8564 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-14T16:43:46.855+03:00  INFO 8564 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1590 ms
+2024-05-14T16:43:47.125+03:00  INFO 8564 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-14T16:43:47.205+03:00 DEBUG 8564 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2024-05-14T16:43:47.275+03:00 DEBUG 8564 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-14T16:43:47.307+03:00 DEBUG 8564 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-14T16:43:47.338+03:00 DEBUG 8564 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-14T16:43:47.452+03:00  INFO 8564 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-05-14T16:43:47.645+03:00  INFO 8564 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1743a5a9
+2024-05-14T16:43:47.647+03:00  INFO 8564 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-05-14T16:43:47.806+03:00  INFO 8564 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-14T16:43:47.853+03:00  INFO 8564 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path ''
+2024-05-14T16:43:47.875+03:00  INFO 8564 --- [restartedMain] r.k.DemoApplication                      : Started DemoApplication in 14.409 seconds (process running for 15.4)
+2024-05-14T16:44:02.864+03:00  INFO 8564 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14T16:44:02.865+03:00  INFO 8564 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-05-14T16:44:02.866+03:00 DEBUG 8564 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected StandardServletMultipartResolver
+2024-05-14T16:44:02.866+03:00 DEBUG 8564 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected AcceptHeaderLocaleResolver
+2024-05-14T16:44:02.867+03:00 DEBUG 8564 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected FixedThemeResolver
+2024-05-14T16:44:02.868+03:00 DEBUG 8564 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@337bbd7b
+2024-05-14T16:44:02.869+03:00 DEBUG 8564 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5a407a9f
+2024-05-14T16:44:02.870+03:00 DEBUG 8564 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-05-14T16:44:02.871+03:00  INFO 8564 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 5 ms
+2024-05-14T16:44:02.883+03:00 DEBUG 8564 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : GET "/", parameters={}
+2024-05-14T16:44:02.909+03:00 DEBUG 8564 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-14T16:44:03.180+03:00 DEBUG 8564 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2024-05-14T16:44:03.236+03:00 DEBUG 8564 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : GET "/favicon.ico", parameters={}
+2024-05-14T16:44:03.238+03:00 DEBUG 8564 --- [http-nio-8080-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-05-14T16:44:03.242+03:00 DEBUG 8564 --- [http-nio-8080-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-05-14T16:44:03.246+03:00 DEBUG 8564 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-05-14T16:44:03.246+03:00 DEBUG 8564 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed 404 NOT_FOUND
+2024-05-14T16:44:03.254+03:00 DEBUG 8564 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-14T16:44:03.256+03:00 DEBUG 8564 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-05-14T16:44:03.278+03:00 DEBUG 8564 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2024-05-14T16:44:03.281+03:00 DEBUG 8564 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue May 14 16:44:03 MSK 2024, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2024-05-14T16:44:03.298+03:00 DEBUG 8564 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Exiting from "ERROR" dispatch, status 404
+2024-05-14T16:44:06.305+03:00 DEBUG 8564 --- [http-nio-8080-exec-4] o.s.w.s.DispatcherServlet                : GET "/api/v1/books.html", parameters={}
+2024-05-14T16:44:06.306+03:00 DEBUG 8564 --- [http-nio-8080-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-05-14T16:44:06.308+03:00 DEBUG 8564 --- [http-nio-8080-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-05-14T16:44:06.309+03:00 DEBUG 8564 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/v1/books.html.]
+2024-05-14T16:44:06.310+03:00 DEBUG 8564 --- [http-nio-8080-exec-4] o.s.w.s.DispatcherServlet                : Completed 404 NOT_FOUND
+2024-05-14T16:44:06.311+03:00 DEBUG 8564 --- [http-nio-8080-exec-4] o.s.w.s.DispatcherServlet                : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-14T16:44:06.312+03:00 DEBUG 8564 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2024-05-14T16:44:06.321+03:00 DEBUG 8564 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2024-05-14T16:44:06.324+03:00 DEBUG 8564 --- [http-nio-8080-exec-4] o.s.w.s.DispatcherServlet                : Exiting from "ERROR" dispatch, status 404
+2024-05-14T16:56:10.896+03:00  WARN 8564 --- [SpringApplicationShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2024-05-14T16:56:10.897+03:00  INFO 8564 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-05-14T16:56:10.904+03:00  INFO 8564 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-05-14T16:56:16.998+03:00  INFO 11092 --- [restartedMain] r.k.DemoApplication                      : Starting DemoApplication using Java 21.0.3 with PID 11092 (D:\Java\spring-boot-recipes\target\classes started by Asher in D:\Java\spring-boot-recipes)
+2024-05-14T16:56:17.005+03:00  INFO 11092 --- [restartedMain] r.k.DemoApplication                      : No active profile set, falling back to 1 default profile: "default"
+2024-05-14T16:56:17.068+03:00  INFO 11092 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'D:\Java\spring-boot-recipes\docker-compose.yaml'
+2024-05-14T16:56:27.445+03:00  INFO 11092 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : There are already Docker Compose services running, skipping startup
+2024-05-14T16:56:27.453+03:00  INFO 11092 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-14T16:56:27.453+03:00  INFO 11092 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-14T16:56:28.120+03:00  INFO 11092 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-14T16:56:28.138+03:00  INFO 11092 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 JDBC repository interfaces.
+2024-05-14T16:56:28.599+03:00  INFO 11092 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2024-05-14T16:56:28.613+03:00  INFO 11092 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-14T16:56:28.614+03:00  INFO 11092 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-14T16:56:28.662+03:00  INFO 11092 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-14T16:56:28.662+03:00  INFO 11092 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1208 ms
+2024-05-14T16:56:28.832+03:00  INFO 11092 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-14T16:56:28.918+03:00 DEBUG 11092 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2024-05-14T16:56:28.981+03:00 DEBUG 11092 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-14T16:56:29.018+03:00 DEBUG 11092 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-14T16:56:29.050+03:00 DEBUG 11092 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-14T16:56:29.130+03:00  INFO 11092 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-05-14T16:56:29.282+03:00  INFO 11092 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4c6727a
+2024-05-14T16:56:29.285+03:00  INFO 11092 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-05-14T16:56:29.427+03:00  INFO 11092 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-14T16:56:29.462+03:00  INFO 11092 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path ''
+2024-05-14T16:56:29.470+03:00  INFO 11092 --- [restartedMain] r.k.DemoApplication                      : Started DemoApplication in 12.956 seconds (process running for 13.791)
+2024-05-14T16:56:34.967+03:00  INFO 11092 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14T16:56:34.967+03:00  INFO 11092 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-05-14T16:56:34.968+03:00 DEBUG 11092 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected StandardServletMultipartResolver
+2024-05-14T16:56:34.968+03:00 DEBUG 11092 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected AcceptHeaderLocaleResolver
+2024-05-14T16:56:34.968+03:00 DEBUG 11092 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected FixedThemeResolver
+2024-05-14T16:56:34.968+03:00 DEBUG 11092 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5eb6cf0e
+2024-05-14T16:56:34.969+03:00 DEBUG 11092 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.support.SessionFlashMapManager@50468d86
+2024-05-14T16:56:34.969+03:00 DEBUG 11092 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-05-14T16:56:34.969+03:00  INFO 11092 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2024-05-14T16:56:34.980+03:00 DEBUG 11092 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : GET "/", parameters={}
+2024-05-14T16:56:35.001+03:00 DEBUG 11092 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-14T16:56:35.222+03:00 DEBUG 11092 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2024-05-14T16:56:36.112+03:00 DEBUG 11092 --- [http-nio-8080-exec-3] o.s.w.s.DispatcherServlet                : GET "/api/v1/books/library.html", parameters={}
+2024-05-14T16:56:36.114+03:00 DEBUG 11092 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ru.kors.webmvc.controller.BookController#all(Model)
+2024-05-14T16:56:36.130+03:00 DEBUG 11092 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-14T16:56:36.168+03:00 DEBUG 11092 --- [http-nio-8080-exec-3] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2024-05-14T16:56:39.170+03:00 DEBUG 11092 --- [http-nio-8080-exec-4] o.s.w.s.DispatcherServlet                : GET "/api/v1/books/library.html?isbn=9378249328729", parameters={masked}
+2024-05-14T16:56:39.171+03:00 DEBUG 11092 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ru.kors.webmvc.controller.BookController#all(Model)
+2024-05-14T16:56:39.172+03:00 DEBUG 11092 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-14T16:56:39.176+03:00 DEBUG 11092 --- [http-nio-8080-exec-4] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2024-05-14T17:03:45.040+03:00  WARN 11092 --- [SpringApplicationShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2024-05-14T17:03:45.041+03:00  INFO 11092 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-05-14T17:03:45.046+03:00  INFO 11092 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-05-14T17:03:51.273+03:00  INFO 25936 --- [restartedMain] r.k.DemoApplication                      : Starting DemoApplication using Java 21.0.3 with PID 25936 (D:\Java\spring-boot-recipes\target\classes started by Asher in D:\Java\spring-boot-recipes)
+2024-05-14T17:03:51.282+03:00  INFO 25936 --- [restartedMain] r.k.DemoApplication                      : No active profile set, falling back to 1 default profile: "default"
+2024-05-14T17:03:51.358+03:00  INFO 25936 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'D:\Java\spring-boot-recipes\docker-compose.yaml'
+2024-05-14T17:04:01.645+03:00  INFO 25936 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : There are already Docker Compose services running, skipping startup
+2024-05-14T17:04:01.654+03:00  INFO 25936 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-14T17:04:01.654+03:00  INFO 25936 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-14T17:04:02.235+03:00  INFO 25936 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-14T17:04:02.252+03:00  INFO 25936 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JDBC repository interfaces.
+2024-05-14T17:04:02.707+03:00  INFO 25936 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2024-05-14T17:04:02.722+03:00  INFO 25936 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-14T17:04:02.722+03:00  INFO 25936 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-14T17:04:02.767+03:00  INFO 25936 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-14T17:04:02.768+03:00  INFO 25936 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1114 ms
+2024-05-14T17:04:02.966+03:00  INFO 25936 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-14T17:04:03.050+03:00 DEBUG 25936 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2024-05-14T17:04:03.125+03:00 DEBUG 25936 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-14T17:04:03.168+03:00 DEBUG 25936 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-14T17:04:03.209+03:00 DEBUG 25936 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-14T17:04:03.298+03:00  INFO 25936 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-05-14T17:04:03.423+03:00  INFO 25936 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2e39e308
+2024-05-14T17:04:03.425+03:00  INFO 25936 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-05-14T17:04:03.560+03:00  INFO 25936 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-14T17:04:03.606+03:00  INFO 25936 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path ''
+2024-05-14T17:04:03.616+03:00  INFO 25936 --- [restartedMain] r.k.DemoApplication                      : Started DemoApplication in 12.935 seconds (process running for 13.917)
+2024-05-14T17:04:11.063+03:00  INFO 25936 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14T17:04:11.063+03:00  INFO 25936 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-05-14T17:04:11.063+03:00 DEBUG 25936 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Detected StandardServletMultipartResolver
+2024-05-14T17:04:11.063+03:00 DEBUG 25936 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Detected AcceptHeaderLocaleResolver
+2024-05-14T17:04:11.063+03:00 DEBUG 25936 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Detected FixedThemeResolver
+2024-05-14T17:04:11.064+03:00 DEBUG 25936 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@300c6dda
+2024-05-14T17:04:11.064+03:00 DEBUG 25936 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.support.SessionFlashMapManager@11fb985a
+2024-05-14T17:04:11.065+03:00 DEBUG 25936 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-05-14T17:04:11.065+03:00  INFO 25936 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2024-05-14T17:04:11.073+03:00 DEBUG 25936 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : GET "/", parameters={}
+2024-05-14T17:04:11.092+03:00 DEBUG 25936 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-14T17:04:11.294+03:00 DEBUG 25936 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2024-05-14T17:04:12.155+03:00 DEBUG 25936 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : GET "/api/v1/books/library.html", parameters={}
+2024-05-14T17:04:12.158+03:00 DEBUG 25936 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ru.kors.webmvc.controller.BookController#all(Model)
+2024-05-14T17:04:12.175+03:00 DEBUG 25936 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-14T17:04:12.206+03:00 DEBUG 25936 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2024-05-14T17:04:13.479+03:00 DEBUG 25936 --- [http-nio-8080-exec-3] o.s.w.s.DispatcherServlet                : GET "/api/v1/books/library.html?isbn=9378249328729", parameters={masked}
+2024-05-14T17:04:13.480+03:00 DEBUG 25936 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ru.kors.webmvc.controller.BookController#get(String, Model)
+2024-05-14T17:04:13.501+03:00 DEBUG 25936 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-14T17:04:13.514+03:00 DEBUG 25936 --- [http-nio-8080-exec-3] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2024-05-14T17:04:17.466+03:00 DEBUG 25936 --- [http-nio-8080-exec-4] o.s.w.s.DispatcherServlet                : GET "/api/v1/books/library.html?isbn=93", parameters={masked}
+2024-05-14T17:04:17.467+03:00 DEBUG 25936 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ru.kors.webmvc.controller.BookController#get(String, Model)
+2024-05-14T17:04:17.468+03:00 DEBUG 25936 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-14T17:04:17.471+03:00 DEBUG 25936 --- [http-nio-8080-exec-4] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2024-05-14T17:07:00.834+03:00  INFO 25936 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-05-14T17:07:00.852+03:00  WARN 25936 --- [Thread-17] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2024-05-14T17:07:00.853+03:00  INFO 25936 --- [Thread-17] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-05-14T17:07:00.861+03:00  INFO 25936 --- [Thread-17] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-05-14T17:07:01.033+03:00  INFO 25936 --- [restartedMain] r.k.DemoApplication                      : Starting DemoApplication using Java 21.0.3 with PID 25936 (D:\Java\spring-boot-recipes\target\classes started by Asher in D:\Java\spring-boot-recipes)
+2024-05-14T17:07:01.035+03:00  INFO 25936 --- [restartedMain] r.k.DemoApplication                      : No active profile set, falling back to 1 default profile: "default"
+2024-05-14T17:07:01.045+03:00  INFO 25936 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'D:\Java\spring-boot-recipes\docker-compose.yaml'
+2024-05-14T17:07:02.621+03:00  INFO 13308 --- [main] r.k.w.c.BookControllerTest               : Starting BookControllerTest using Java 21.0.3 with PID 13308 (started by Asher in D:\Java\spring-boot-recipes)
+2024-05-14T17:07:02.633+03:00  INFO 13308 --- [main] r.k.w.c.BookControllerTest               : No active profile set, falling back to 1 default profile: "default"
+2024-05-14T17:07:02.682+03:00 DEBUG 13308 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@8a98f38
+2024-05-14T17:07:05.023+03:00  INFO 13308 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-14T17:07:05.158+03:00 DEBUG 13308 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2024-05-14T17:07:05.371+03:00 DEBUG 13308 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-14T17:07:05.442+03:00 DEBUG 13308 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-14T17:07:05.502+03:00 DEBUG 13308 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-14T17:07:05.690+03:00  INFO 13308 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-05-14T17:07:05.691+03:00  INFO 13308 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2024-05-14T17:07:05.699+03:00  INFO 13308 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 3 ms
+2024-05-14T17:07:05.759+03:00  INFO 13308 --- [main] r.k.w.c.BookControllerTest               : Started BookControllerTest in 3.735 seconds (process running for 5.841)
+2024-05-14T17:07:05.915+03:00 DEBUG 13308 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ru.kors.webmvc.controller.BookController#all(Model)
+2024-05-14T17:07:05.962+03:00 DEBUG 13308 --- [main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2024-05-14T17:07:06.379+03:00 DEBUG 13308 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@8a98f38, started on Tue May 14 17:07:02 MSK 2024
+2024-05-14T17:07:09.033+03:00  INFO 25936 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : There are already Docker Compose services running, skipping startup
+2024-05-14T17:07:09.169+03:00  INFO 25936 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-14T17:07:09.172+03:00  INFO 25936 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
+2024-05-14T17:07:09.245+03:00  INFO 25936 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2024-05-14T17:07:09.246+03:00  INFO 25936 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-14T17:07:09.247+03:00  INFO 25936 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-14T17:07:09.260+03:00  INFO 25936 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-14T17:07:09.260+03:00  INFO 25936 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 226 ms
+2024-05-14T17:07:09.303+03:00  INFO 25936 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-14T17:07:09.315+03:00 DEBUG 25936 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2024-05-14T17:07:09.341+03:00 DEBUG 25936 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-14T17:07:09.348+03:00 DEBUG 25936 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-14T17:07:09.351+03:00 DEBUG 25936 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-14T17:07:09.368+03:00  INFO 25936 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2024-05-14T17:07:09.394+03:00  INFO 25936 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@660e0ecc
+2024-05-14T17:07:09.394+03:00  INFO 25936 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2024-05-14T17:07:09.409+03:00  INFO 25936 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-14T17:07:09.426+03:00  INFO 25936 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path ''
+2024-05-14T17:07:09.429+03:00  INFO 25936 --- [restartedMain] r.k.DemoApplication                      : Started DemoApplication in 8.469 seconds (process running for 199.731)
+2024-05-14T17:07:09.431+03:00  INFO 25936 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-05-14T17:12:15.224+03:00  INFO 11592 --- [main] r.k.w.c.BookControllerTest               : Starting BookControllerTest using Java 21.0.3 with PID 11592 (started by Asher in D:\Java\spring-boot-recipes)
+2024-05-14T17:12:15.234+03:00  INFO 11592 --- [main] r.k.w.c.BookControllerTest               : No active profile set, falling back to 1 default profile: "default"
+2024-05-14T17:12:15.276+03:00 DEBUG 11592 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@ca93621
+2024-05-14T17:12:17.194+03:00  INFO 11592 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-14T17:12:17.327+03:00 DEBUG 11592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2024-05-14T17:12:17.511+03:00 DEBUG 11592 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-14T17:12:17.575+03:00 DEBUG 11592 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-14T17:12:17.620+03:00 DEBUG 11592 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-14T17:12:17.746+03:00  INFO 11592 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-05-14T17:12:17.747+03:00  INFO 11592 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2024-05-14T17:12:17.755+03:00  INFO 11592 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 3 ms
+2024-05-14T17:12:17.806+03:00  INFO 11592 --- [main] r.k.w.c.BookControllerTest               : Started BookControllerTest in 3.119 seconds (process running for 4.576)
+2024-05-14T17:12:17.955+03:00 DEBUG 11592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ru.kors.webmvc.controller.BookController#get(String, Model)
+2024-05-14T17:12:18.009+03:00 DEBUG 11592 --- [main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2024-05-14T17:12:18.577+03:00 DEBUG 11592 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@ca93621, started on Tue May 14 17:12:15 MSK 2024
+2024-05-14T17:12:30.640+03:00  INFO 25788 --- [main] r.k.w.c.BookControllerTest               : Starting BookControllerTest using Java 21.0.3 with PID 25788 (started by Asher in D:\Java\spring-boot-recipes)
+2024-05-14T17:12:30.651+03:00  INFO 25788 --- [main] r.k.w.c.BookControllerTest               : No active profile set, falling back to 1 default profile: "default"
+2024-05-14T17:12:30.703+03:00 DEBUG 25788 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@8a98f38
+2024-05-14T17:12:33.007+03:00  INFO 25788 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-14T17:12:33.140+03:00 DEBUG 25788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2024-05-14T17:12:33.308+03:00 DEBUG 25788 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-14T17:12:33.369+03:00 DEBUG 25788 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-14T17:12:33.412+03:00 DEBUG 25788 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-14T17:12:33.555+03:00  INFO 25788 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-05-14T17:12:33.556+03:00  INFO 25788 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2024-05-14T17:12:33.561+03:00  INFO 25788 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 2 ms
+2024-05-14T17:12:33.599+03:00  INFO 25788 --- [main] r.k.w.c.BookControllerTest               : Started BookControllerTest in 3.717 seconds (process running for 6.32)
+2024-05-14T17:12:33.715+03:00 DEBUG 25788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ru.kors.webmvc.controller.BookController#all(Model)
+2024-05-14T17:12:33.748+03:00 DEBUG 25788 --- [main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2024-05-14T17:12:34.194+03:00 DEBUG 25788 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@8a98f38, started on Tue May 14 17:12:30 MSK 2024
+2024-05-14T17:14:50.737+03:00  INFO 25028 --- [main] r.k.w.c.BookControllerTest               : Starting BookControllerTest using Java 21.0.3 with PID 25028 (started by Asher in D:\Java\spring-boot-recipes)
+2024-05-14T17:14:50.747+03:00  INFO 25028 --- [main] r.k.w.c.BookControllerTest               : No active profile set, falling back to 1 default profile: "default"
+2024-05-14T17:14:50.789+03:00 DEBUG 25028 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@c6b2dd9
+2024-05-14T17:14:52.931+03:00  INFO 25028 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-14T17:14:53.096+03:00 DEBUG 25028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2024-05-14T17:14:53.267+03:00 DEBUG 25028 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-14T17:14:53.327+03:00 DEBUG 25028 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-14T17:14:53.385+03:00 DEBUG 25028 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-14T17:14:53.522+03:00  INFO 25028 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-05-14T17:14:53.523+03:00  INFO 25028 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2024-05-14T17:14:53.529+03:00  INFO 25028 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 3 ms
+2024-05-14T17:14:53.576+03:00  INFO 25028 --- [main] r.k.w.c.BookControllerTest               : Started BookControllerTest in 3.458 seconds (process running for 5.069)
+2024-05-14T17:14:53.686+03:00  WARN 25028 --- [main] o.s.t.c.TestContextManager               : Caught exception while invoking 'afterTestMethod' callback on TestExecutionListener [org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener] for test method [void ru.kors.webmvc.controller.BookControllerTest.shouldReturnEmptyViewByNotFoundBook() throws java.lang.Exception] and test instance [ru.kors.webmvc.controller.BookControllerTest@5c997de8]
+
+org.mockito.exceptions.misusing.InvalidUseOfMatchersException: 
+Misplaced or misused argument matcher detected here:
+
+-> at ru.kors.webmvc.controller.BookControllerTest.shouldReturnEmptyViewByNotFoundBook(BookControllerTest.java:72)
+
+You cannot use argument matchers outside of verification or stubbing.
+Examples of correct usage of argument matchers:
+    when(mock.get(anyInt())).thenReturn(null);
+    doThrow(new RuntimeException()).when(mock).someVoidMethod(any());
+    verify(mock).someMethod(contains("foo"))
+
+This message may appear after an NullPointerException if the last matcher is returning an object 
+like any() but the stubbed method signature expect a primitive argument, in this case,
+use primitive alternatives.
+    when(mock.get(any())); // bad use, will raise NPE
+    when(mock.get(anyInt())); // correct usage use
+
+Also, this error might show up because you use argument matchers with methods that cannot be mocked.
+Following methods *cannot* be stubbed/verified: final/private/equals()/hashCode().
+Mocking methods declared on non-public parent classes is not supported.
+
+	at org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener.resetMocks(ResetMocksTestExecutionListener.java:86) ~[spring-boot-test-3.2.5.jar:3.2.5]
+	at org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener.resetMocks(ResetMocksTestExecutionListener.java:73) ~[spring-boot-test-3.2.5.jar:3.2.5]
+	at org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener.afterTestMethod(ResetMocksTestExecutionListener.java:67) ~[spring-boot-test-3.2.5.jar:3.2.5]
+	at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:487) ~[spring-test-6.1.6.jar:6.1.6]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.afterEach(SpringExtension.java:278) ~[spring-test-6.1.6.jar:6.1.6]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAfterEachCallbacks$12(TestMethodTestDescriptor.java:261) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$13(TestMethodTestDescriptor.java:277) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$14(TestMethodTestDescriptor.java:277) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.platform.commons.util.CollectionUtils.forEachInReverseOrder(CollectionUtils.java:217) ~[junit-platform-commons-1.10.2.jar:1.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAllAfterMethodsOrCallbacks(TestMethodTestDescriptor.java:276) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAfterEachCallbacks(TestMethodTestDescriptor.java:260) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:145) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57) [junit5-rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) [idea_rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55) [junit-rt.jar:?]
+
+2024-05-14T17:14:53.725+03:00 DEBUG 25028 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@c6b2dd9, started on Tue May 14 17:14:50 MSK 2024
+2024-05-14T17:15:28.311+03:00  INFO 23568 --- [main] r.k.w.c.BookControllerTest               : Starting BookControllerTest using Java 21.0.3 with PID 23568 (started by Asher in D:\Java\spring-boot-recipes)
+2024-05-14T17:15:28.325+03:00  INFO 23568 --- [main] r.k.w.c.BookControllerTest               : No active profile set, falling back to 1 default profile: "default"
+2024-05-14T17:15:28.375+03:00 DEBUG 23568 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@ca93621
+2024-05-14T17:15:30.621+03:00  INFO 23568 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-14T17:15:30.742+03:00 DEBUG 23568 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2024-05-14T17:15:30.960+03:00 DEBUG 23568 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-14T17:15:31.035+03:00 DEBUG 23568 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-14T17:15:31.086+03:00 DEBUG 23568 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-14T17:15:31.243+03:00  INFO 23568 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-05-14T17:15:31.244+03:00  INFO 23568 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2024-05-14T17:15:31.249+03:00  INFO 23568 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 2 ms
+2024-05-14T17:15:31.297+03:00  INFO 23568 --- [main] r.k.w.c.BookControllerTest               : Started BookControllerTest in 3.672 seconds (process running for 5.103)
+2024-05-14T17:15:31.448+03:00 DEBUG 23568 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ru.kors.webmvc.controller.BookController#get(String, Model)
+2024-05-14T17:15:31.504+03:00 DEBUG 23568 --- [main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2024-05-14T17:15:31.799+03:00 DEBUG 23568 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@ca93621, started on Tue May 14 17:15:28 MSK 2024
+2024-05-14T17:15:33.621+03:00  WARN 25936 --- [SpringApplicationShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2024-05-14T17:15:33.622+03:00  INFO 25936 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown initiated...
+2024-05-14T17:15:33.624+03:00  INFO 25936 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown completed.
