@@ -2008,3 +2008,191 @@ Caused by: org.thymeleaf.exceptions.TemplateInputException: Error resolving temp
 2024-05-15T20:52:59.321+03:00  WARN 15760 --- [SpringApplicationShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
 2024-05-15T20:52:59.323+03:00  INFO 15760 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
 2024-05-15T20:52:59.328+03:00  INFO 15760 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-05-15T20:53:05.674+03:00  INFO 22152 --- [restartedMain] r.k.DemoApplication                      : Starting DemoApplication using Java 21.0.3 with PID 22152 (D:\Java\spring-boot-recipes\target\classes started by Asher in D:\Java\spring-boot-recipes)
+2024-05-15T20:53:05.680+03:00  INFO 22152 --- [restartedMain] r.k.DemoApplication                      : No active profile set, falling back to 1 default profile: "default"
+2024-05-15T20:53:05.742+03:00  INFO 22152 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'D:\Java\spring-boot-recipes\docker-compose.yaml'
+2024-05-15T20:53:14.934+03:00  INFO 22152 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : There are already Docker Compose services running, skipping startup
+2024-05-15T20:53:14.940+03:00  INFO 22152 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-15T20:53:14.940+03:00  INFO 22152 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-15T20:53:15.330+03:00  INFO 22152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-15T20:53:15.345+03:00  INFO 22152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JDBC repository interfaces.
+2024-05-15T20:53:15.679+03:00  INFO 22152 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2024-05-15T20:53:15.689+03:00  INFO 22152 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-15T20:53:15.690+03:00  INFO 22152 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-15T20:53:15.723+03:00  INFO 22152 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-15T20:53:15.724+03:00  INFO 22152 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 784 ms
+2024-05-15T20:53:15.852+03:00  INFO 22152 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-15T20:53:15.915+03:00 DEBUG 22152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2024-05-15T20:53:15.970+03:00 DEBUG 22152 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-15T20:53:15.996+03:00 DEBUG 22152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-15T20:53:16.020+03:00 DEBUG 22152 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-15T20:53:16.084+03:00  INFO 22152 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-05-15T20:53:16.197+03:00  INFO 22152 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4289275d
+2024-05-15T20:53:16.198+03:00  INFO 22152 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-05-15T20:53:16.303+03:00  INFO 22152 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-15T20:53:16.332+03:00  INFO 22152 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path ''
+2024-05-15T20:53:16.339+03:00  INFO 22152 --- [restartedMain] r.k.DemoApplication                      : Started DemoApplication in 11.045 seconds (process running for 11.704)
+2024-05-15T20:53:21.384+03:00  INFO 22152 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15T20:53:21.384+03:00  INFO 22152 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-05-15T20:53:21.384+03:00 DEBUG 22152 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected StandardServletMultipartResolver
+2024-05-15T20:53:21.384+03:00 DEBUG 22152 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected AcceptHeaderLocaleResolver
+2024-05-15T20:53:21.384+03:00 DEBUG 22152 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected FixedThemeResolver
+2024-05-15T20:53:21.385+03:00 DEBUG 22152 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@60f24eb1
+2024-05-15T20:53:21.385+03:00 DEBUG 22152 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.support.SessionFlashMapManager@91ad0f7
+2024-05-15T20:53:21.385+03:00 DEBUG 22152 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-05-15T20:53:21.386+03:00  INFO 22152 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2024-05-15T20:53:21.392+03:00 DEBUG 22152 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : GET "/api/v1/books/server-error", parameters={}
+2024-05-15T20:53:21.399+03:00 DEBUG 22152 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ru.kors.webmvc.controller.BookController#error()
+2024-05-15T20:53:21.411+03:00  WARN 22152 --- [http-nio-8080-exec-1] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [org.springframework.web.server.ServerErrorException: 500 INTERNAL_SERVER_ERROR "Test Exception"]
+2024-05-15T20:53:21.412+03:00 DEBUG 22152 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed 500 INTERNAL_SERVER_ERROR
+2024-05-15T20:53:21.416+03:00 DEBUG 22152 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-15T20:53:21.417+03:00 DEBUG 22152 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2024-05-15T20:53:21.432+03:00 DEBUG 22152 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2024-05-15T20:53:21.627+03:00 DEBUG 22152 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Exiting from "ERROR" dispatch, status 500
+2024-05-15T20:56:06.005+03:00  WARN 22152 --- [SpringApplicationShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2024-05-15T20:56:06.006+03:00  INFO 22152 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-05-15T20:56:06.010+03:00  INFO 22152 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-05-15T21:33:27.958+03:00  INFO 3428 --- [restartedMain] r.k.DemoApplication                      : Starting DemoApplication using Java 21.0.3 with PID 3428 (D:\Java\spring-boot-recipes\target\classes started by Asher in D:\Java\spring-boot-recipes)
+2024-05-15T21:33:27.965+03:00  INFO 3428 --- [restartedMain] r.k.DemoApplication                      : No active profile set, falling back to 1 default profile: "default"
+2024-05-15T21:33:28.027+03:00  INFO 3428 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'D:\Java\spring-boot-recipes\docker-compose.yaml'
+2024-05-15T21:33:38.210+03:00  INFO 3428 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : There are already Docker Compose services running, skipping startup
+2024-05-15T21:33:38.217+03:00  INFO 3428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-15T21:33:38.217+03:00  INFO 3428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-15T21:33:38.720+03:00  INFO 3428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-15T21:33:38.739+03:00  INFO 3428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 JDBC repository interfaces.
+2024-05-15T21:33:39.205+03:00  INFO 3428 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2024-05-15T21:33:39.218+03:00  INFO 3428 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-15T21:33:39.219+03:00  INFO 3428 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-15T21:33:39.257+03:00  INFO 3428 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-15T21:33:39.257+03:00  INFO 3428 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1039 ms
+2024-05-15T21:33:39.448+03:00  INFO 3428 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-15T21:33:39.524+03:00 DEBUG 3428 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2024-05-15T21:33:39.590+03:00 DEBUG 3428 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-15T21:33:39.622+03:00 DEBUG 3428 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-15T21:33:39.646+03:00 DEBUG 3428 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-15T21:33:39.738+03:00  INFO 3428 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-05-15T21:33:39.879+03:00  INFO 3428 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@31139834
+2024-05-15T21:33:39.881+03:00  INFO 3428 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-05-15T21:33:40.035+03:00  INFO 3428 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-15T21:33:40.076+03:00  INFO 3428 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path ''
+2024-05-15T21:33:40.087+03:00  INFO 3428 --- [restartedMain] r.k.DemoApplication                      : Started DemoApplication in 12.6 seconds (process running for 13.455)
+2024-05-15T21:33:49.389+03:00  INFO 3428 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15T21:33:49.390+03:00  INFO 3428 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-05-15T21:33:49.390+03:00 DEBUG 3428 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected StandardServletMultipartResolver
+2024-05-15T21:33:49.390+03:00 DEBUG 3428 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected AcceptHeaderLocaleResolver
+2024-05-15T21:33:49.391+03:00 DEBUG 3428 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected FixedThemeResolver
+2024-05-15T21:33:49.391+03:00 DEBUG 3428 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@561f03bd
+2024-05-15T21:33:49.392+03:00 DEBUG 3428 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4488ef4
+2024-05-15T21:33:49.392+03:00 DEBUG 3428 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-05-15T21:33:49.392+03:00  INFO 3428 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2024-05-15T21:33:49.401+03:00 DEBUG 3428 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : GET "/", parameters={}
+2024-05-15T21:33:49.419+03:00 DEBUG 3428 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-15T21:33:49.666+03:00 DEBUG 3428 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2024-05-15T21:37:25.384+03:00 DEBUG 3428 --- [http-nio-8080-exec-4] o.s.w.s.DispatcherServlet                : GET "/", parameters={}
+2024-05-15T21:37:25.386+03:00 DEBUG 3428 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-15T21:37:25.389+03:00 DEBUG 3428 --- [http-nio-8080-exec-4] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2024-05-15T21:37:26.929+03:00 DEBUG 3428 --- [http-nio-8080-exec-5] o.s.w.s.DispatcherServlet                : GET "/", parameters={}
+2024-05-15T21:37:26.931+03:00 DEBUG 3428 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-15T21:37:26.934+03:00 DEBUG 3428 --- [http-nio-8080-exec-5] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2024-05-15T21:37:41.637+03:00 DEBUG 3428 --- [http-nio-8080-exec-6] o.s.w.s.DispatcherServlet                : GET "/", parameters={}
+2024-05-15T21:37:41.639+03:00 DEBUG 3428 --- [http-nio-8080-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-15T21:37:41.643+03:00 DEBUG 3428 --- [http-nio-8080-exec-6] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2024-05-15T21:37:48.749+03:00 DEBUG 3428 --- [http-nio-8080-exec-7] o.s.w.s.DispatcherServlet                : GET "/", parameters={}
+2024-05-15T21:37:48.751+03:00 DEBUG 3428 --- [http-nio-8080-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-15T21:37:48.753+03:00 DEBUG 3428 --- [http-nio-8080-exec-7] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2024-05-15T21:38:01.385+03:00 DEBUG 3428 --- [http-nio-8080-exec-8] o.s.w.s.DispatcherServlet                : GET "/", parameters={}
+2024-05-15T21:38:01.386+03:00 DEBUG 3428 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-15T21:38:01.388+03:00 DEBUG 3428 --- [http-nio-8080-exec-8] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2024-05-15T21:38:05.205+03:00 DEBUG 3428 --- [http-nio-8080-exec-9] o.s.w.s.DispatcherServlet                : GET "/", parameters={}
+2024-05-15T21:38:05.206+03:00 DEBUG 3428 --- [http-nio-8080-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-15T21:38:05.209+03:00 DEBUG 3428 --- [http-nio-8080-exec-9] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2024-05-15T21:38:06.204+03:00 DEBUG 3428 --- [http-nio-8080-exec-10] o.s.w.s.DispatcherServlet                : GET "/", parameters={}
+2024-05-15T21:38:06.205+03:00 DEBUG 3428 --- [http-nio-8080-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-15T21:38:06.207+03:00 DEBUG 3428 --- [http-nio-8080-exec-10] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2024-05-15T21:38:06.992+03:00 DEBUG 3428 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : GET "/", parameters={}
+2024-05-15T21:38:06.993+03:00 DEBUG 3428 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-15T21:38:06.995+03:00 DEBUG 3428 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2024-05-15T21:39:49.992+03:00 DEBUG 3428 --- [http-nio-8080-exec-4] o.s.w.s.DispatcherServlet                : GET "/", parameters={}
+2024-05-15T21:39:49.993+03:00 DEBUG 3428 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-15T21:39:49.995+03:00 DEBUG 3428 --- [http-nio-8080-exec-4] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2024-05-15T21:39:55.420+03:00  WARN 3428 --- [SpringApplicationShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2024-05-15T21:39:55.421+03:00  INFO 3428 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-05-15T21:39:55.426+03:00  INFO 3428 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-05-15T21:40:01.535+03:00  INFO 20156 --- [restartedMain] r.k.DemoApplication                      : Starting DemoApplication using Java 21.0.3 with PID 20156 (D:\Java\spring-boot-recipes\target\classes started by Asher in D:\Java\spring-boot-recipes)
+2024-05-15T21:40:01.542+03:00  INFO 20156 --- [restartedMain] r.k.DemoApplication                      : No active profile set, falling back to 1 default profile: "default"
+2024-05-15T21:40:01.618+03:00  INFO 20156 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'D:\Java\spring-boot-recipes\docker-compose.yaml'
+2024-05-15T21:40:12.126+03:00  INFO 20156 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : There are already Docker Compose services running, skipping startup
+2024-05-15T21:40:12.138+03:00  INFO 20156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-15T21:40:12.139+03:00  INFO 20156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-15T21:40:12.813+03:00  INFO 20156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-15T21:40:12.830+03:00  INFO 20156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 JDBC repository interfaces.
+2024-05-15T21:40:13.278+03:00  INFO 20156 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2024-05-15T21:40:13.299+03:00  INFO 20156 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-15T21:40:13.299+03:00  INFO 20156 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-15T21:40:13.350+03:00  INFO 20156 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-15T21:40:13.350+03:00  INFO 20156 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1210 ms
+2024-05-15T21:40:13.572+03:00  INFO 20156 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-15T21:40:13.673+03:00 DEBUG 20156 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2024-05-15T21:40:13.794+03:00 DEBUG 20156 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-15T21:40:13.858+03:00 DEBUG 20156 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-15T21:40:13.898+03:00 DEBUG 20156 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-15T21:40:14.048+03:00  INFO 20156 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-05-15T21:40:14.204+03:00  INFO 20156 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1b3b4b1
+2024-05-15T21:40:14.206+03:00  INFO 20156 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-05-15T21:40:14.391+03:00  INFO 20156 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-15T21:40:14.450+03:00  INFO 20156 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path ''
+2024-05-15T21:40:14.460+03:00  INFO 20156 --- [restartedMain] r.k.DemoApplication                      : Started DemoApplication in 13.414 seconds (process running for 14.284)
+2024-05-15T21:40:19.330+03:00  INFO 20156 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15T21:40:19.330+03:00  INFO 20156 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-05-15T21:40:19.330+03:00 DEBUG 20156 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Detected StandardServletMultipartResolver
+2024-05-15T21:40:19.330+03:00 DEBUG 20156 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Detected AcceptHeaderLocaleResolver
+2024-05-15T21:40:19.331+03:00 DEBUG 20156 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Detected FixedThemeResolver
+2024-05-15T21:40:19.332+03:00 DEBUG 20156 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2c108e5a
+2024-05-15T21:40:19.332+03:00 DEBUG 20156 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.support.SessionFlashMapManager@378b8e22
+2024-05-15T21:40:19.332+03:00 DEBUG 20156 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-05-15T21:40:19.332+03:00  INFO 20156 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2024-05-15T21:40:19.341+03:00 DEBUG 20156 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : GET "/", parameters={}
+2024-05-15T21:40:19.356+03:00 DEBUG 20156 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-15T21:40:19.574+03:00 DEBUG 20156 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2024-05-15T21:42:00.272+03:00  WARN 20156 --- [SpringApplicationShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2024-05-15T21:42:00.274+03:00  INFO 20156 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-05-15T21:42:00.279+03:00  INFO 20156 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-05-15T21:42:06.816+03:00  INFO 24308 --- [restartedMain] r.k.DemoApplication                      : Starting DemoApplication using Java 21.0.3 with PID 24308 (D:\Java\spring-boot-recipes\target\classes started by Asher in D:\Java\spring-boot-recipes)
+2024-05-15T21:42:06.823+03:00  INFO 24308 --- [restartedMain] r.k.DemoApplication                      : No active profile set, falling back to 1 default profile: "default"
+2024-05-15T21:42:06.882+03:00  INFO 24308 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'D:\Java\spring-boot-recipes\docker-compose.yaml'
+2024-05-15T21:42:18.877+03:00  INFO 24308 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : There are already Docker Compose services running, skipping startup
+2024-05-15T21:42:18.890+03:00  INFO 24308 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-15T21:42:18.890+03:00  INFO 24308 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-15T21:42:19.636+03:00  INFO 24308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-15T21:42:19.658+03:00  INFO 24308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 JDBC repository interfaces.
+2024-05-15T21:42:20.179+03:00  INFO 24308 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2024-05-15T21:42:20.193+03:00  INFO 24308 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-15T21:42:20.193+03:00  INFO 24308 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-15T21:42:20.235+03:00  INFO 24308 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-15T21:42:20.236+03:00  INFO 24308 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1345 ms
+2024-05-15T21:42:20.437+03:00  INFO 24308 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-15T21:42:20.517+03:00 DEBUG 24308 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2024-05-15T21:42:20.608+03:00 DEBUG 24308 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-15T21:42:20.656+03:00 DEBUG 24308 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-15T21:42:20.691+03:00 DEBUG 24308 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-15T21:42:20.809+03:00  INFO 24308 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-05-15T21:42:20.988+03:00  INFO 24308 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2e8a36e8
+2024-05-15T21:42:20.991+03:00  INFO 24308 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-05-15T21:42:21.147+03:00  INFO 24308 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-15T21:42:21.185+03:00  INFO 24308 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path ''
+2024-05-15T21:42:21.201+03:00  INFO 24308 --- [restartedMain] r.k.DemoApplication                      : Started DemoApplication in 14.828 seconds (process running for 15.569)
+2024-05-15T21:42:24.069+03:00  INFO 24308 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15T21:42:24.069+03:00  INFO 24308 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-05-15T21:42:24.070+03:00 DEBUG 24308 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected StandardServletMultipartResolver
+2024-05-15T21:42:24.070+03:00 DEBUG 24308 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected AcceptHeaderLocaleResolver
+2024-05-15T21:42:24.070+03:00 DEBUG 24308 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected FixedThemeResolver
+2024-05-15T21:42:24.071+03:00 DEBUG 24308 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3dd43e0b
+2024-05-15T21:42:24.071+03:00 DEBUG 24308 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.support.SessionFlashMapManager@65005c40
+2024-05-15T21:42:24.071+03:00 DEBUG 24308 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-05-15T21:42:24.072+03:00  INFO 24308 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2024-05-15T21:42:24.079+03:00 DEBUG 24308 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : GET "/", parameters={}
+2024-05-15T21:42:24.095+03:00 DEBUG 24308 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-05-15T21:42:24.322+03:00 DEBUG 24308 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2024-05-15T21:44:27.769+03:00  WARN 24308 --- [SpringApplicationShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2024-05-15T21:44:27.770+03:00  INFO 24308 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-05-15T21:44:27.775+03:00  INFO 24308 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.

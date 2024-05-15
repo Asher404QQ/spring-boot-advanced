@@ -5,10 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Library</title>
+    <title th:text="#{index.main.title}"/>
 </head>
 <body>
-<h1>Library</h1>
-<a th:href="@{/api/v1/books/library.html}" href="#">List of books</a>
+<h1 th:text="#{index.title}"/>
+<a th:href="@{/api/v1/books/library.html}" href="#" th:text="#{index.books.link}"/>
 </body>
 </html>
