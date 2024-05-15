@@ -4,6 +4,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ServerErrorException;
 import org.springframework.web.util.UriComponentsBuilder;
 import ru.kors.webmvc.model.Book;
 import ru.kors.webmvc.service.BookService;
@@ -45,5 +46,11 @@ public class BookController {
     @GetMapping
     @ResponseBody public Iterable<Book> findAll() {
         return service.findAll();
+    }
+
+    @GetMapping("/server-error")
+    public void error() {
+        var cause = new NullPointerException("Test Exception");
+        throw new ServerErrorException(cause.getMessage(), cause);
     }
 }

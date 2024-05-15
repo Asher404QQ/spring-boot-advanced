@@ -12,3 +12,7 @@ logging:
         web: debug
 server:
   port: 8080
+  error:
+    whitelabel:
+      enabled: true
+    include-stacktrace: never
