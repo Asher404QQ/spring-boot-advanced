@@ -10,5 +10,12 @@
 <body>
 <h1 th:text="#{index.title}"/>
 <a th:href="@{/api/v1/books/library.html}" href="#" th:text="#{index.books.link}"/>
+<div>
+    <h3>Language</h3>
+    <div>
+        <a href="?lacale=ru" th:text="#{main.language.ru}">RU</a>
+        <a href="?lacale=en" th:text="#{main.language.en}">EN</a>
+    </div>
+</div>
 </body>
 </html>
