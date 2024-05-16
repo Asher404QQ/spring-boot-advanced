@@ -16,6 +16,13 @@ server:
     whitelabel:
       enabled: true
     include-stacktrace: never
+  ssl:
+    key-store: classpath:korsakov.pfx
+    key-store-type: pkcs12
+    key-store-password: password
+    key-password: password
+    key-alias: korsakov
+    enabled: true
 spring:
   messages:
     fallback-to-system-locale: false
