@@ -4805,3 +4805,419 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.1.6.jar:6.1.6]
 	... 72 more
 
+2024-05-17T16:35:51.786+03:00  INFO 23268 --- [restartedMain] r.k.DemoApplication                      : Starting DemoApplication using Java 21.0.3 with PID 23268 (D:\Java\spring-boot-recipes\target\classes started by Asher in D:\Java\spring-boot-recipes)
+2024-05-17T16:35:51.793+03:00  INFO 23268 --- [restartedMain] r.k.DemoApplication                      : No active profile set, falling back to 1 default profile: "default"
+2024-05-17T16:35:51.845+03:00  INFO 23268 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'D:\Java\spring-boot-recipes\docker-compose.yaml'
+2024-05-17T16:36:02.516+03:00  INFO 23268 --- [OutputReader-stderr] o.s.b.d.c.c.DockerCli                    :  Container spring-boot-recipes-postgres-1  Created
+2024-05-17T16:36:02.520+03:00  INFO 23268 --- [OutputReader-stderr] o.s.b.d.c.c.DockerCli                    :  Container spring-boot-recipes-postgres-1  Starting
+2024-05-17T16:36:02.907+03:00  INFO 23268 --- [OutputReader-stderr] o.s.b.d.c.c.DockerCli                    :  Container spring-boot-recipes-postgres-1  Started
+2024-05-17T16:36:02.908+03:00  INFO 23268 --- [OutputReader-stderr] o.s.b.d.c.c.DockerCli                    :  Container spring-boot-recipes-postgres-1  Waiting
+2024-05-17T16:36:03.428+03:00  INFO 23268 --- [OutputReader-stderr] o.s.b.d.c.c.DockerCli                    :  Container spring-boot-recipes-postgres-1  Healthy
+2024-05-17T16:36:06.696+03:00  INFO 23268 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-17T16:36:06.696+03:00  INFO 23268 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-17T16:36:07.131+03:00  INFO 23268 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-17T16:36:07.132+03:00  INFO 23268 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-17T16:36:07.156+03:00  INFO 23268 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.kors.webmvc.repository.AuthorRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-05-17T16:36:07.156+03:00  INFO 23268 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 JDBC repository interfaces.
+2024-05-17T16:36:07.163+03:00  INFO 23268 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-17T16:36:07.164+03:00  INFO 23268 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-17T16:36:07.183+03:00  INFO 23268 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
+2024-05-17T16:36:07.702+03:00  INFO 23268 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (https)
+2024-05-17T16:36:07.716+03:00  INFO 23268 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-17T16:36:07.716+03:00  INFO 23268 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-17T16:36:07.751+03:00  INFO 23268 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-17T16:36:07.752+03:00  INFO 23268 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1055 ms
+2024-05-17T16:36:07.878+03:00  INFO 23268 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-17T16:36:07.926+03:00  INFO 23268 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-17T16:36:07.956+03:00  INFO 23268 --- [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-05-17T16:36:08.138+03:00  INFO 23268 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-17T16:36:08.161+03:00  INFO 23268 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-05-17T16:36:08.268+03:00  INFO 23268 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4a23b007
+2024-05-17T16:36:08.269+03:00  INFO 23268 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-05-17T16:36:08.293+03:00  WARN 23268 --- [restartedMain] o.h.o.deprecation                        : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-17T16:36:08.957+03:00  INFO 23268 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-17T16:36:08.991+03:00  INFO 23268 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-17T16:36:09.315+03:00  WARN 23268 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-17T16:36:09.332+03:00  INFO 23268 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-17T16:36:09.379+03:00 DEBUG 23268 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 17 mappings in 'requestMappingHandlerMapping'
+2024-05-17T16:36:09.396+03:00 DEBUG 23268 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-17T16:36:09.416+03:00 DEBUG 23268 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-17T16:36:09.440+03:00 DEBUG 23268 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-17T16:36:09.612+03:00  INFO 23268 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-17T16:36:09.835+03:00  INFO 23268 --- [restartedMain] o.a.t.u.n.N.certificate                  : Connector [https-jsse-nio-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Asher\.keystore] using alias [korsakov] with trust store [null]
+2024-05-17T16:36:09.846+03:00  INFO 23268 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (https) with context path ''
+2024-05-17T16:36:09.856+03:00  INFO 23268 --- [restartedMain] r.k.DemoApplication                      : Started DemoApplication in 18.478 seconds (process running for 19.197)
+2024-05-17T16:36:12.399+03:00  INFO 23268 --- [https-jsse-nio-8080-exec-6] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-17T16:36:12.400+03:00  INFO 23268 --- [https-jsse-nio-8080-exec-6] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-05-17T16:36:12.401+03:00 DEBUG 23268 --- [https-jsse-nio-8080-exec-6] o.s.w.s.DispatcherServlet                : Detected StandardServletMultipartResolver
+2024-05-17T16:36:12.401+03:00 DEBUG 23268 --- [https-jsse-nio-8080-exec-6] o.s.w.s.DispatcherServlet                : Detected CookieLocaleResolver
+2024-05-17T16:36:12.401+03:00 DEBUG 23268 --- [https-jsse-nio-8080-exec-6] o.s.w.s.DispatcherServlet                : Detected FixedThemeResolver
+2024-05-17T16:36:12.402+03:00 DEBUG 23268 --- [https-jsse-nio-8080-exec-6] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@39787944
+2024-05-17T16:36:12.402+03:00 DEBUG 23268 --- [https-jsse-nio-8080-exec-6] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.support.SessionFlashMapManager@572fcb51
+2024-05-17T16:36:12.402+03:00 DEBUG 23268 --- [https-jsse-nio-8080-exec-6] o.s.w.s.DispatcherServlet                : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-05-17T16:36:12.402+03:00  INFO 23268 --- [https-jsse-nio-8080-exec-6] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2024-05-17T16:36:12.409+03:00 DEBUG 23268 --- [https-jsse-nio-8080-exec-6] o.s.w.s.DispatcherServlet                : GET "/api/v1/authors", parameters={}
+2024-05-17T16:36:12.415+03:00 DEBUG 23268 --- [https-jsse-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ru.kors.webmvc.controller.ProxyAuthorController#authors()
+2024-05-17T16:36:12.567+03:00 DEBUG 23268 --- [https-jsse-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-05-17T16:36:12.568+03:00 DEBUG 23268 --- [https-jsse-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Author{id=1, name='Tamara27', email='Jules_Fisher@hotmail.com'}, Author{id=2, name='Cristal4', emai (truncated)...]
+2024-05-17T16:36:12.584+03:00 DEBUG 23268 --- [https-jsse-nio-8080-exec-6] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2024-05-17T16:36:16.056+03:00 DEBUG 23268 --- [https-jsse-nio-8080-exec-7] o.s.w.s.DispatcherServlet                : GET "/api/v1/authors/1", parameters={}
+2024-05-17T16:36:16.057+03:00 DEBUG 23268 --- [https-jsse-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ru.kors.webmvc.controller.ProxyAuthorController#findById(Long)
+2024-05-17T16:36:16.094+03:00 DEBUG 23268 --- [https-jsse-nio-8080-exec-7] o.s.w.c.RestTemplate                     : HTTP GET https://jsonplaceholder.typicode.com/posts
+2024-05-17T16:36:16.101+03:00 DEBUG 23268 --- [https-jsse-nio-8080-exec-7] o.s.w.c.RestTemplate                     : Accept=[application/json, application/*+json]
+2024-05-17T16:36:16.568+03:00 DEBUG 23268 --- [https-jsse-nio-8080-exec-7] o.s.w.c.RestTemplate                     : Response 200 OK
+2024-05-17T16:36:16.570+03:00 DEBUG 23268 --- [https-jsse-nio-8080-exec-7] o.s.w.c.RestTemplate                     : Reading to [java.util.List<ru.kors.webmvc.model.Post>]
+2024-05-17T16:36:16.600+03:00 DEBUG 23268 --- [https-jsse-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-05-17T16:36:16.600+03:00 DEBUG 23268 --- [https-jsse-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ProxyAuthor{name='Tamara27', email='Jules_Fisher@hotmail.com', posts=[Post{userId=1, id=1, title='su (truncated)...]
+2024-05-17T16:36:16.605+03:00 DEBUG 23268 --- [https-jsse-nio-8080-exec-7] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2024-05-17T16:46:36.421+03:00  INFO 23268 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-17T16:46:36.424+03:00  INFO 23268 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-05-17T16:46:36.426+03:00  INFO 23268 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-05-18T19:58:03.174+03:00  INFO 22380 --- [restartedMain] r.k.DemoApplication                      : Starting DemoApplication using Java 21.0.3 with PID 22380 (D:\Java\spring-boot-recipes\target\classes started by Asher in D:\Java\spring-boot-recipes)
+2024-05-18T19:58:03.183+03:00  INFO 22380 --- [restartedMain] r.k.DemoApplication                      : No active profile set, falling back to 1 default profile: "default"
+2024-05-18T19:58:03.263+03:00  INFO 22380 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'D:\Java\spring-boot-recipes\docker-compose.yaml'
+2024-05-18T19:58:15.176+03:00  INFO 22380 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : There are already Docker Compose services running, skipping startup
+2024-05-18T19:58:15.185+03:00  INFO 22380 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-18T19:58:15.185+03:00  INFO 22380 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-18T19:58:15.534+03:00  WARN 22380 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [ru.kors.DemoApplication]
+2024-05-18T19:58:15.598+03:00 ERROR 22380 --- [restartedMain] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [ru.kors.DemoApplication]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:179) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:416) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:289) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:788) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:606) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) [spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) [spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) [spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) [spring-boot-3.2.5.jar:3.2.5]
+	at ru.kors.DemoApplication.main(DemoApplication.java:10) [classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.2.5.jar:3.2.5]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'helloWorldController' for bean class [ru.kors.webmvc.controller.HelloWorldController] conflicts with existing, non-compatible bean definition of same name and class [ru.kors.webflux.controller.WebFluxHelloWorldController]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:306) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:246) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:197) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:165) ~[spring-context-6.1.6.jar:6.1.6]
+	... 16 more
+
+2024-05-18T20:00:15.652+03:00  INFO 7360 --- [restartedMain] r.k.DemoApplication                      : Starting DemoApplication using Java 21.0.3 with PID 7360 (D:\Java\spring-boot-recipes\target\classes started by Asher in D:\Java\spring-boot-recipes)
+2024-05-18T20:00:15.659+03:00  INFO 7360 --- [restartedMain] r.k.DemoApplication                      : No active profile set, falling back to 1 default profile: "default"
+2024-05-18T20:00:15.724+03:00  INFO 7360 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'D:\Java\spring-boot-recipes\docker-compose.yaml'
+2024-05-18T20:00:25.998+03:00  INFO 7360 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : There are already Docker Compose services running, skipping startup
+2024-05-18T20:00:26.005+03:00  INFO 7360 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-18T20:00:26.005+03:00  INFO 7360 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-18T20:00:26.660+03:00  INFO 7360 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-18T20:00:26.661+03:00  INFO 7360 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-18T20:00:26.697+03:00  INFO 7360 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.kors.webmvc.repository.AuthorRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-05-18T20:00:26.698+03:00  INFO 7360 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 0 JDBC repository interfaces.
+2024-05-18T20:00:26.708+03:00  INFO 7360 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-18T20:00:26.709+03:00  INFO 7360 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-18T20:00:26.819+03:00  INFO 7360 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105 ms. Found 1 JPA repository interface.
+2024-05-18T20:00:27.632+03:00  INFO 7360 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (https)
+2024-05-18T20:00:27.650+03:00  INFO 7360 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-18T20:00:27.651+03:00  INFO 7360 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-18T20:00:27.711+03:00  INFO 7360 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-18T20:00:27.712+03:00  INFO 7360 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1705 ms
+2024-05-18T20:00:27.910+03:00  INFO 7360 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-18T20:00:27.996+03:00  INFO 7360 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-18T20:00:28.041+03:00  INFO 7360 --- [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-05-18T20:00:28.337+03:00  INFO 7360 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-18T20:00:28.381+03:00  INFO 7360 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-05-18T20:00:28.638+03:00  INFO 7360 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6a4a0845
+2024-05-18T20:00:28.639+03:00  INFO 7360 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-05-18T20:00:28.704+03:00  WARN 7360 --- [restartedMain] o.h.o.deprecation                        : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-18T20:00:29.723+03:00  INFO 7360 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-18T20:00:29.797+03:00  INFO 7360 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-18T20:00:30.269+03:00  WARN 7360 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-18T20:00:30.289+03:00  INFO 7360 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-18T20:00:30.352+03:00 DEBUG 7360 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 18 mappings in 'requestMappingHandlerMapping'
+2024-05-18T20:00:30.358+03:00 DEBUG 7360 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 1 mappings in 'beanNameHandlerMapping'
+2024-05-18T20:00:30.375+03:00 DEBUG 7360 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-18T20:00:30.399+03:00 DEBUG 7360 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-18T20:00:30.426+03:00 DEBUG 7360 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-18T20:00:30.703+03:00  INFO 7360 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-18T20:00:30.965+03:00  INFO 7360 --- [restartedMain] o.a.t.u.n.N.certificate                  : Connector [https-jsse-nio-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Asher\.keystore] using alias [korsakov] with trust store [null]
+2024-05-18T20:00:30.990+03:00  INFO 7360 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (https) with context path ''
+2024-05-18T20:00:30.998+03:00  INFO 7360 --- [restartedMain] r.k.DemoApplication                      : Started DemoApplication in 15.886 seconds (process running for 16.919)
+2024-05-18T20:02:32.679+03:00  INFO 7360 --- [https-jsse-nio-8080-exec-10] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-18T20:02:32.679+03:00  INFO 7360 --- [https-jsse-nio-8080-exec-10] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-05-18T20:02:32.679+03:00 DEBUG 7360 --- [https-jsse-nio-8080-exec-10] o.s.w.s.DispatcherServlet                : Detected StandardServletMultipartResolver
+2024-05-18T20:02:32.679+03:00 DEBUG 7360 --- [https-jsse-nio-8080-exec-10] o.s.w.s.DispatcherServlet                : Detected CookieLocaleResolver
+2024-05-18T20:02:32.680+03:00 DEBUG 7360 --- [https-jsse-nio-8080-exec-10] o.s.w.s.DispatcherServlet                : Detected FixedThemeResolver
+2024-05-18T20:02:32.680+03:00 DEBUG 7360 --- [https-jsse-nio-8080-exec-10] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5a6fdc1c
+2024-05-18T20:02:32.681+03:00 DEBUG 7360 --- [https-jsse-nio-8080-exec-10] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.support.SessionFlashMapManager@275ec7ce
+2024-05-18T20:02:32.681+03:00 DEBUG 7360 --- [https-jsse-nio-8080-exec-10] o.s.w.s.DispatcherServlet                : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-05-18T20:02:32.681+03:00  INFO 7360 --- [https-jsse-nio-8080-exec-10] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2024-05-18T20:02:32.688+03:00 DEBUG 7360 --- [https-jsse-nio-8080-exec-10] o.s.w.s.DispatcherServlet                : GET "/api/v1/web-flux", parameters={}
+2024-05-18T20:02:32.694+03:00 DEBUG 7360 --- [https-jsse-nio-8080-exec-10] o.s.w.s.h.BeanNameUrlHandlerMapping      : Mapped to ru.kors.webflux.controller.WebFluxHelloWorldController@6fe93496
+2024-05-18T20:02:32.695+03:00 DEBUG 7360 --- [https-jsse-nio-8080-exec-10] o.s.w.s.DispatcherServlet                : Failed to complete request: jakarta.servlet.ServletException: No adapter for handler [ru.kors.webflux.controller.WebFluxHelloWorldController@6fe93496]: The DispatcherServlet configuration needs to include a HandlerAdapter that supports this handler
+2024-05-18T20:02:32.695+03:00 ERROR 7360 --- [https-jsse-nio-8080-exec-10] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [No adapter for handler [ru.kors.webflux.controller.WebFluxHelloWorldController@6fe93496]: The DispatcherServlet configuration needs to include a HandlerAdapter that supports this handler] with root cause
+
+jakarta.servlet.ServletException: No adapter for handler [ru.kors.webflux.controller.WebFluxHelloWorldController@6fe93496]: The DispatcherServlet configuration needs to include a HandlerAdapter that supports this handler
+	at org.springframework.web.servlet.DispatcherServlet.getHandlerAdapter(DispatcherServlet.java:1324) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+
+2024-05-18T20:02:32.712+03:00 DEBUG 7360 --- [https-jsse-nio-8080-exec-10] o.s.w.s.DispatcherServlet                : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-18T20:02:32.718+03:00 DEBUG 7360 --- [https-jsse-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-05-18T20:02:32.750+03:00 DEBUG 7360 --- [https-jsse-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-05-18T20:02:32.751+03:00 DEBUG 7360 --- [https-jsse-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sat May 18 20:02:32 MSK 2024, status=500, error=Internal Server Error, message=No adapter (truncated)...]
+2024-05-18T20:02:32.776+03:00 DEBUG 7360 --- [https-jsse-nio-8080-exec-10] o.s.w.s.DispatcherServlet                : Exiting from "ERROR" dispatch, status 500
+2024-05-18T20:02:54.808+03:00 DEBUG 7360 --- [https-jsse-nio-8080-exec-4] o.s.w.s.DispatcherServlet                : GET "/api/v1/web-flux", parameters={}
+2024-05-18T20:02:54.809+03:00 DEBUG 7360 --- [https-jsse-nio-8080-exec-4] o.s.w.s.h.BeanNameUrlHandlerMapping      : Mapped to ru.kors.webflux.controller.WebFluxHelloWorldController@6fe93496
+2024-05-18T20:02:54.809+03:00 DEBUG 7360 --- [https-jsse-nio-8080-exec-4] o.s.w.s.DispatcherServlet                : Failed to complete request: jakarta.servlet.ServletException: No adapter for handler [ru.kors.webflux.controller.WebFluxHelloWorldController@6fe93496]: The DispatcherServlet configuration needs to include a HandlerAdapter that supports this handler
+2024-05-18T20:02:54.809+03:00 ERROR 7360 --- [https-jsse-nio-8080-exec-4] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [No adapter for handler [ru.kors.webflux.controller.WebFluxHelloWorldController@6fe93496]: The DispatcherServlet configuration needs to include a HandlerAdapter that supports this handler] with root cause
+
+jakarta.servlet.ServletException: No adapter for handler [ru.kors.webflux.controller.WebFluxHelloWorldController@6fe93496]: The DispatcherServlet configuration needs to include a HandlerAdapter that supports this handler
+	at org.springframework.web.servlet.DispatcherServlet.getHandlerAdapter(DispatcherServlet.java:1324) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+
+2024-05-18T20:02:54.810+03:00 DEBUG 7360 --- [https-jsse-nio-8080-exec-4] o.s.w.s.DispatcherServlet                : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-18T20:02:54.811+03:00 DEBUG 7360 --- [https-jsse-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-05-18T20:02:54.812+03:00 DEBUG 7360 --- [https-jsse-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-05-18T20:02:54.813+03:00 DEBUG 7360 --- [https-jsse-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sat May 18 20:02:54 MSK 2024, status=500, error=Internal Server Error, message=No adapter (truncated)...]
+2024-05-18T20:02:54.814+03:00 DEBUG 7360 --- [https-jsse-nio-8080-exec-4] o.s.w.s.DispatcherServlet                : Exiting from "ERROR" dispatch, status 500
+2024-05-18T20:05:06.826+03:00  INFO 7360 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-18T20:05:06.828+03:00  INFO 7360 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-05-18T20:05:06.833+03:00  INFO 7360 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-05-18T20:05:13.714+03:00  INFO 24788 --- [restartedMain] r.k.DemoApplication                      : Starting DemoApplication using Java 21.0.3 with PID 24788 (D:\Java\spring-boot-recipes\target\classes started by Asher in D:\Java\spring-boot-recipes)
+2024-05-18T20:05:13.721+03:00  INFO 24788 --- [restartedMain] r.k.DemoApplication                      : No active profile set, falling back to 1 default profile: "default"
+2024-05-18T20:05:13.784+03:00  INFO 24788 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'D:\Java\spring-boot-recipes\docker-compose.yaml'
+2024-05-18T20:05:24.493+03:00  INFO 24788 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : There are already Docker Compose services running, skipping startup
+2024-05-18T20:05:24.504+03:00  INFO 24788 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-18T20:05:24.505+03:00  INFO 24788 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-18T20:05:25.427+03:00  INFO 24788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-18T20:05:25.428+03:00  INFO 24788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-18T20:05:25.462+03:00  INFO 24788 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.kors.webmvc.repository.AuthorRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-05-18T20:05:25.463+03:00  INFO 24788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 0 JDBC repository interfaces.
+2024-05-18T20:05:25.473+03:00  INFO 24788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-18T20:05:25.474+03:00  INFO 24788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-18T20:05:25.611+03:00  INFO 24788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 133 ms. Found 1 JPA repository interface.
+2024-05-18T20:05:26.559+03:00  INFO 24788 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (https)
+2024-05-18T20:05:26.595+03:00  INFO 24788 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-18T20:05:26.596+03:00  INFO 24788 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-18T20:05:26.650+03:00  INFO 24788 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-18T20:05:26.650+03:00  INFO 24788 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2143 ms
+2024-05-18T20:05:26.926+03:00  INFO 24788 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-18T20:05:27.036+03:00  INFO 24788 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-18T20:05:27.102+03:00  INFO 24788 --- [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-05-18T20:05:27.452+03:00  INFO 24788 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-18T20:05:27.491+03:00  INFO 24788 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-05-18T20:05:27.665+03:00  INFO 24788 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7eecfd1d
+2024-05-18T20:05:27.667+03:00  INFO 24788 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-05-18T20:05:27.699+03:00  WARN 24788 --- [restartedMain] o.h.o.deprecation                        : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-18T20:05:28.814+03:00  INFO 24788 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-18T20:05:28.858+03:00  INFO 24788 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-18T20:05:29.273+03:00  WARN 24788 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-18T20:05:29.296+03:00  INFO 24788 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-18T20:05:29.387+03:00 DEBUG 24788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 18 mappings in 'requestMappingHandlerMapping'
+2024-05-18T20:05:29.418+03:00 DEBUG 24788 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-18T20:05:29.449+03:00 DEBUG 24788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-18T20:05:29.497+03:00 DEBUG 24788 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-18T20:05:29.943+03:00  INFO 24788 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-18T20:05:30.228+03:00  INFO 24788 --- [restartedMain] o.a.t.u.n.N.certificate                  : Connector [https-jsse-nio-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Asher\.keystore] using alias [korsakov] with trust store [null]
+2024-05-18T20:05:30.245+03:00  INFO 24788 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (https) with context path ''
+2024-05-18T20:05:30.255+03:00  INFO 24788 --- [restartedMain] r.k.DemoApplication                      : Started DemoApplication in 17.057 seconds (process running for 17.956)
+2024-05-18T20:05:32.422+03:00  INFO 24788 --- [https-jsse-nio-8080-exec-7] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-18T20:05:32.423+03:00  INFO 24788 --- [https-jsse-nio-8080-exec-7] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-05-18T20:05:32.423+03:00 DEBUG 24788 --- [https-jsse-nio-8080-exec-7] o.s.w.s.DispatcherServlet                : Detected StandardServletMultipartResolver
+2024-05-18T20:05:32.423+03:00 DEBUG 24788 --- [https-jsse-nio-8080-exec-7] o.s.w.s.DispatcherServlet                : Detected CookieLocaleResolver
+2024-05-18T20:05:32.423+03:00 DEBUG 24788 --- [https-jsse-nio-8080-exec-7] o.s.w.s.DispatcherServlet                : Detected FixedThemeResolver
+2024-05-18T20:05:32.424+03:00 DEBUG 24788 --- [https-jsse-nio-8080-exec-7] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3f2f0443
+2024-05-18T20:05:32.425+03:00 DEBUG 24788 --- [https-jsse-nio-8080-exec-7] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.support.SessionFlashMapManager@32d48851
+2024-05-18T20:05:32.425+03:00 DEBUG 24788 --- [https-jsse-nio-8080-exec-7] o.s.w.s.DispatcherServlet                : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-05-18T20:05:32.425+03:00  INFO 24788 --- [https-jsse-nio-8080-exec-7] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2024-05-18T20:05:32.432+03:00 DEBUG 24788 --- [https-jsse-nio-8080-exec-7] o.s.w.s.DispatcherServlet                : GET "/api/v1/web-flux", parameters={}
+2024-05-18T20:05:32.439+03:00 DEBUG 24788 --- [https-jsse-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ru.kors.webflux.controller.WebFluxHelloWorldController#hello()
+2024-05-18T20:05:32.470+03:00 DEBUG 24788 --- [https-jsse-nio-8080-exec-7] o.s.w.c.r.a.WebAsyncManager              : Started async request for "/api/v1/web-flux"
+2024-05-18T20:05:32.473+03:00 DEBUG 24788 --- [https-jsse-nio-8080-exec-7] o.s.w.c.r.a.WebAsyncManager              : Async result set to: Hello World! Spring Boot Version: 3.2.5 for "/api/v1/web-flux"
+2024-05-18T20:05:32.473+03:00 DEBUG 24788 --- [https-jsse-nio-8080-exec-7] o.s.w.c.r.a.WebAsyncManager              : Performing async dispatch for "/api/v1/web-flux"
+2024-05-18T20:05:32.475+03:00 DEBUG 24788 --- [https-jsse-nio-8080-exec-7] o.s.w.s.DispatcherServlet                : Exiting but response remains open for further handling
+2024-05-18T20:05:32.480+03:00 DEBUG 24788 --- [https-jsse-nio-8080-exec-7] o.s.w.s.DispatcherServlet                : "ASYNC" dispatch for GET "/api/v1/web-flux", parameters={}
+2024-05-18T20:05:32.481+03:00 DEBUG 24788 --- [https-jsse-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerAdapter : Resume with async result ["Hello World! Spring Boot Version: 3.2.5"]
+2024-05-18T20:05:32.489+03:00 DEBUG 24788 --- [https-jsse-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-05-18T20:05:32.489+03:00 DEBUG 24788 --- [https-jsse-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World! Spring Boot Version: 3.2.5"]
+2024-05-18T20:05:32.497+03:00 DEBUG 24788 --- [https-jsse-nio-8080-exec-7] o.s.w.s.DispatcherServlet                : Exiting from "ASYNC" dispatch, status 200
+2024-05-18T20:18:58.234+03:00  INFO 24788 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-05-18T20:18:58.256+03:00  INFO 24788 --- [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-18T20:18:58.261+03:00  INFO 24788 --- [Thread-17] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-05-18T20:18:58.268+03:00  INFO 24788 --- [Thread-17] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-05-18T20:18:58.464+03:00  INFO 24788 --- [restartedMain] r.k.DemoApplication                      : Starting DemoApplication using Java 21.0.3 with PID 24788 (D:\Java\spring-boot-recipes\target\classes started by Asher in D:\Java\spring-boot-recipes)
+2024-05-18T20:18:58.465+03:00  INFO 24788 --- [restartedMain] r.k.DemoApplication                      : No active profile set, falling back to 1 default profile: "default"
+2024-05-18T20:18:58.473+03:00  INFO 24788 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'D:\Java\spring-boot-recipes\docker-compose.yaml'
+2024-05-18T20:19:05.984+03:00  INFO 12544 --- [main] r.k.w.c.WebFluxHelloWorldControllerTest  : Starting WebFluxHelloWorldControllerTest using Java 21.0.3 with PID 12544 (started by Asher in D:\Java\spring-boot-recipes)
+2024-05-18T20:19:05.998+03:00  INFO 12544 --- [main] r.k.w.c.WebFluxHelloWorldControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-05-18T20:19:06.943+03:00  INFO 24788 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : There are already Docker Compose services running, skipping startup
+2024-05-18T20:19:07.238+03:00  INFO 24788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-18T20:19:07.239+03:00  INFO 24788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-18T20:19:07.251+03:00  INFO 24788 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.kors.webmvc.repository.AuthorRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-05-18T20:19:07.251+03:00  INFO 24788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JDBC repository interfaces.
+2024-05-18T20:19:07.259+03:00  INFO 24788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-18T20:19:07.259+03:00  INFO 24788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-18T20:19:07.269+03:00  INFO 24788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2024-05-18T20:19:07.410+03:00 DEBUG 12544 --- [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2024-05-18T20:19:07.433+03:00 DEBUG 12544 --- [main] o.s.w.r.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-18T20:19:07.632+03:00 DEBUG 12544 --- [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: none
+2024-05-18T20:19:07.703+03:00 DEBUG 12544 --- [main] o.s.w.s.a.HttpWebHandlerAdapter          : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-05-18T20:19:07.711+03:00  INFO 24788 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (https)
+2024-05-18T20:19:07.716+03:00  INFO 24788 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-18T20:19:07.717+03:00  INFO 24788 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-18T20:19:07.738+03:00  INFO 12544 --- [main] r.k.w.c.WebFluxHelloWorldControllerTest  : Started WebFluxHelloWorldControllerTest in 2.472 seconds (process running for 4.572)
+2024-05-18T20:19:07.748+03:00  INFO 24788 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-18T20:19:07.749+03:00  INFO 24788 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 804 ms
+2024-05-18T20:19:07.810+03:00  INFO 24788 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-18T20:19:07.815+03:00  INFO 24788 --- [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-05-18T20:19:07.823+03:00  INFO 24788 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-18T20:19:07.825+03:00  INFO 24788 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2024-05-18T20:19:07.860+03:00  INFO 24788 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@14c7aad8
+2024-05-18T20:19:07.861+03:00  INFO 24788 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2024-05-18T20:19:07.867+03:00  WARN 24788 --- [restartedMain] o.h.o.deprecation                        : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-18T20:19:07.918+03:00  INFO 24788 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-18T20:19:07.935+03:00  INFO 24788 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-18T20:19:08.109+03:00  WARN 24788 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-18T20:19:08.125+03:00  INFO 24788 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-18T20:19:08.150+03:00 DEBUG 24788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 18 mappings in 'requestMappingHandlerMapping'
+2024-05-18T20:19:08.163+03:00 DEBUG 24788 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-18T20:19:08.175+03:00 DEBUG 24788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-18T20:19:08.191+03:00 DEBUG 24788 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-18T20:19:08.307+03:00  INFO 24788 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-18T20:19:08.533+03:00  INFO 24788 --- [restartedMain] o.a.t.u.n.N.certificate                  : Connector [https-jsse-nio-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Asher\.keystore] using alias [korsakov] with trust store [null]
+2024-05-18T20:19:08.538+03:00  INFO 24788 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (https) with context path ''
+2024-05-18T20:19:08.543+03:00  INFO 24788 --- [restartedMain] r.k.DemoApplication                      : Started DemoApplication in 10.163 seconds (process running for 836.244)
+2024-05-18T20:19:08.545+03:00  INFO 24788 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-05-18T20:19:08.988+03:00 DEBUG 12544 --- [main] o.s.w.r.f.c.ExchangeFunctions            : [b77b0a0] HTTP GET /api/v1/web-flux
+2024-05-18T20:19:09.039+03:00 DEBUG 12544 --- [parallel-1] o.s.w.s.a.HttpWebHandlerAdapter          : [6c4063a4] HTTP GET "/api/v1/web-flux"
+2024-05-18T20:19:09.076+03:00 DEBUG 12544 --- [parallel-1] s.w.r.r.m.a.RequestMappingHandlerMapping : [6c4063a4] Mapped to ru.kors.webflux.controller.WebFluxHelloWorldController#hello()
+2024-05-18T20:19:09.104+03:00 DEBUG 12544 --- [parallel-1] o.s.w.r.r.m.a.ResponseBodyResultHandler  : [6c4063a4] Using 'text/plain;charset=UTF-8' given [text/plain] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2024-05-18T20:19:09.105+03:00 DEBUG 12544 --- [parallel-1] o.s.w.r.r.m.a.ResponseBodyResultHandler  : [6c4063a4] 0..1 [java.lang.String]
+2024-05-18T20:19:09.117+03:00 DEBUG 12544 --- [parallel-1] o.s.w.HttpLogging                        : [6c4063a4] Writing "Hello World! Spring Boot Version: 3.2.5"
+2024-05-18T20:19:09.129+03:00 DEBUG 12544 --- [parallel-1] o.s.w.s.a.HttpWebHandlerAdapter          : [6c4063a4] Completed 200 OK
+2024-05-18T20:19:09.144+03:00 DEBUG 12544 --- [parallel-1] o.s.w.r.f.c.ExchangeFunctions            : [b77b0a0] [18304eca] Response 200 OK
+2024-05-18T20:19:09.175+03:00 DEBUG 12544 --- [main] o.s.w.HttpLogging                        : [b77b0a0] [18304eca] Decoded "Hello World! Spring Boot Version: 3.2.5"
+2024-05-18T20:19:09.736+03:00  INFO 24788 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-05-18T20:19:09.742+03:00  INFO 24788 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-18T20:19:09.744+03:00  INFO 24788 --- [Thread-19] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown initiated...
+2024-05-18T20:19:09.747+03:00  INFO 24788 --- [Thread-19] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown completed.
+2024-05-18T20:19:09.918+03:00  INFO 24788 --- [restartedMain] r.k.DemoApplication                      : Starting DemoApplication using Java 21.0.3 with PID 24788 (D:\Java\spring-boot-recipes\target\classes started by Asher in D:\Java\spring-boot-recipes)
+2024-05-18T20:19:09.919+03:00  INFO 24788 --- [restartedMain] r.k.DemoApplication                      : No active profile set, falling back to 1 default profile: "default"
+2024-05-18T20:19:09.925+03:00  INFO 24788 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'D:\Java\spring-boot-recipes\docker-compose.yaml'
+2024-05-18T20:19:16.763+03:00  INFO 24788 --- [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : There are already Docker Compose services running, skipping startup
+2024-05-18T20:19:16.908+03:00  INFO 24788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-18T20:19:16.908+03:00  INFO 24788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-18T20:19:16.913+03:00  INFO 24788 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.kors.webmvc.repository.AuthorRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-05-18T20:19:16.913+03:00  INFO 24788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2024-05-18T20:19:16.916+03:00  INFO 24788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-18T20:19:16.916+03:00  INFO 24788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-18T20:19:16.921+03:00  INFO 24788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2024-05-18T20:19:17.116+03:00  INFO 24788 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (https)
+2024-05-18T20:19:17.117+03:00  INFO 24788 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-18T20:19:17.118+03:00  INFO 24788 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-18T20:19:17.142+03:00  INFO 24788 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-18T20:19:17.142+03:00  INFO 24788 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 377 ms
+2024-05-18T20:19:17.175+03:00  INFO 24788 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-18T20:19:17.177+03:00  INFO 24788 --- [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2024-05-18T20:19:17.180+03:00  INFO 24788 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-18T20:19:17.181+03:00  INFO 24788 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Starting...
+2024-05-18T20:19:17.212+03:00  INFO 24788 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@db52d83
+2024-05-18T20:19:17.212+03:00  INFO 24788 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Start completed.
+2024-05-18T20:19:17.215+03:00  WARN 24788 --- [restartedMain] o.h.o.deprecation                        : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-18T20:19:17.243+03:00  INFO 24788 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-18T20:19:17.254+03:00  INFO 24788 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-18T20:19:17.342+03:00  WARN 24788 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-18T20:19:17.351+03:00  INFO 24788 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-18T20:19:17.363+03:00 DEBUG 24788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 18 mappings in 'requestMappingHandlerMapping'
+2024-05-18T20:19:17.375+03:00 DEBUG 24788 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-18T20:19:17.383+03:00 DEBUG 24788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-18T20:19:17.386+03:00 DEBUG 24788 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-18T20:19:17.433+03:00  INFO 24788 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-18T20:19:17.590+03:00  INFO 24788 --- [restartedMain] o.a.t.u.n.N.certificate                  : Connector [https-jsse-nio-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Asher\.keystore] using alias [korsakov] with trust store [null]
+2024-05-18T20:19:17.600+03:00  INFO 24788 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (https) with context path ''
+2024-05-18T20:19:17.603+03:00  INFO 24788 --- [restartedMain] r.k.DemoApplication                      : Started DemoApplication in 7.755 seconds (process running for 845.303)
+2024-05-18T20:19:17.605+03:00  INFO 24788 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

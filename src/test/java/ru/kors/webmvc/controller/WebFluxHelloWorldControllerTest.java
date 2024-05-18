@@ -12,7 +12,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @WebMvcTest(HelloWorldController.class)
-class HelloWorldControllerTest {
+class WebFluxHelloWorldControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
