@@ -24,6 +24,10 @@ server:
     key-alias: korsakov
     enabled: true
 spring:
+  security:
+    user:
+      name: admin
+      password: admin
   messages:
     fallback-to-system-locale: false
   datasource:
