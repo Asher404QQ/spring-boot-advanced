@@ -1,0 +1,45 @@
+#calculator:
+#  lhs: 11
+#  rhs: 99
+#  op: "*"
+logging:
+  file:
+    path: /var/log
+    name: application.log
+  level:
+    org:
+      springframework:
+        web: debug
+server:
+  port: 8101
+  error:
+    whitelabel:
+      enabled: true
+    include-stacktrace: never
+  ssl:
+    key-store: classpath:korsakov.pfx
+    key-store-type: pkcs12
+    key-store-password: password
+    key-password: password
+    key-alias: korsakov
+    enabled: true
+spring:
+  security:
+    user:
+      name: admin
+      password: admin
+  messages:
+    fallback-to-system-locale: false
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5433/spring_boot_advanced
+    username: admin
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: false
