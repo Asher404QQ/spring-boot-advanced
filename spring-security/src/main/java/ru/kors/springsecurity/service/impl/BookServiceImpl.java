@@ -1,5 +1,6 @@
 package ru.kors.springsecurity.service.impl;
 
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Service;
 import ru.kors.springsecurity.model.Book;
 import ru.kors.springsecurity.service.BookService;
@@ -24,16 +25,19 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
+    @PreAuthorize("isAuthenticated()")
     public Iterable<Book> findAll() {
         return books.values();
     }
 
     @Override
+    @PreAuthorize("@accessChecker.hasLocalAccess(authentication)")
     public Book save(Book book) {
         return books.put(book.isbn(), book);
     }
 
     @Override
+    @PreAuthorize("hasAuthority('ADMIN')")
     public Optional<Book> findByISBN(String isbn) {
         return Optional.ofNullable(books.get(isbn));
     }

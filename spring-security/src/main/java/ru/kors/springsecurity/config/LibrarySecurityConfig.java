@@ -4,6 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.Customizer;
+import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.core.userdetails.User;
@@ -12,29 +13,20 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
-import org.springframework.security.web.access.expression.WebExpressionAuthorizationManager;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 @EnableWebSecurity
+@EnableMethodSecurity
 public class LibrarySecurityConfig implements WebMvcConfigurer {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception {
         return httpSecurity
                 .headers(Customizer.withDefaults())
-                .anonymous(anon -> anon.principal("guest").authorities("ROLE_GUEST"))
-                .authorizeHttpRequests(auth ->
-                    auth.requestMatchers(HttpMethod.GET, "/api/v1/security/books").hasAuthority("USER")
-                            .requestMatchers(HttpMethod.GET, "/api/v1/security/books*").access(
-                                    new WebExpressionAuthorizationManager("hasAuthority('ADMIN')")
-                            ).requestMatchers(HttpMethod.POST, "/api/v1/security/books*").access(
-                                    new WebExpressionAuthorizationManager("@accessChecker.hasLocalAccess(authentication)")
-                            )
-                )
                 .formLogin(
-                        login -> login.loginPage("/login").permitAll()
+                        login -> login.loginPage("/login")
                                 .defaultSuccessUrl("/api/v1/security/books/library.html", true)
                                 .failureUrl("/login?error=true")
                 )
