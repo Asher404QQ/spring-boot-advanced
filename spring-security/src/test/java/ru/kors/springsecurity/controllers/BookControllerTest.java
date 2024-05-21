@@ -5,11 +5,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWebTestClient;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.TestPropertySource;
-import org.springframework.test.web.reactive.server.WebTestClient;
 import ru.kors.springsecurity.client.TestcontainersConfig;
 import ru.kors.springsecurity.model.Book;
 import ru.kors.springsecurity.service.BookService;
@@ -21,11 +22,13 @@ import java.util.Map;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-@TestPropertySource(properties = "spring.security.user.password=admin")
-@AutoConfigureWebTestClient
+@TestPropertySource(properties = {
+        "spring.security.user.password=admin",
+        "spring.security.user.name=admin"
+})
 class BookControllerTest implements TestcontainersConfig {
     @Autowired
-    private WebTestClient client;
+    private TestRestTemplate restTemplate;
     @MockBean
     private BookService bookService;
     private final Map<String, Book> bookMap = new HashMap<>();
@@ -52,10 +55,10 @@ class BookControllerTest implements TestcontainersConfig {
     void shouldReturnAllBooks() {
         Mockito.when(bookService.findAll()).thenReturn(bookMap.values());
 
-        client.get().uri("/api/v1/books")
-                .headers(httpHeaders -> httpHeaders.setBasicAuth("user", "admin"))
-                .exchange()
-                .expectStatus().isOk()
-                .expectBodyList(Book.class).hasSize(3);
+        ResponseEntity<Book[]> books = restTemplate.withBasicAuth("admin", "admin")
+                .getForEntity("/api/v1/books", Book[].class);
+
+        assertEquals(books.getStatusCode(), HttpStatus.OK);
+        assertEquals(bookMap.size(), books.getBody().length);
     }
 }

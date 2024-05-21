@@ -10,7 +10,7 @@ import ru.kors.springsecurity.model.Book;
 import ru.kors.springsecurity.service.BookService;
 
 @Controller
-@RequestMapping("/api/v1/books")
+@RequestMapping("/api/v1/security/books")
 public class BookController {
     private final BookService service;
 
