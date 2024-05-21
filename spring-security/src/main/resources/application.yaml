@@ -1,0 +1,12 @@
+server:
+  port: 8102
+spring:
+  application:
+    name: spring-security
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          github:
+#            client-id: <clientId-from-Github>
+#            client-secret: <secret-from-Github>
