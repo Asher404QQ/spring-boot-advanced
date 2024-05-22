@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: data-access
+  datasource:
+    url: jdbc:postgresql://localhost:5434/customers
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 5
+      minimum-idle: 2
+      leak-detection-threshold: 20000
+      connection-timeout: 40000
