@@ -11,3 +11,8 @@ spring:
       minimum-idle: 2
       leak-detection-threshold: 20000
       connection-timeout: 40000
+  sql:
+    init:
+      mode: always
+  flyway:
+    baseline-on-migrate: true
