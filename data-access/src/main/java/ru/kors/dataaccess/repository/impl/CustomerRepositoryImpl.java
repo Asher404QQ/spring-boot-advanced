@@ -33,7 +33,7 @@ public class CustomerRepositoryImpl implements CustomerRepository {
     public Optional<Customer> findById(Long id) {
         try {
             var customer = jdbcTemplate
-                    .queryForObject(FIND_BY_ID_QUERY, (rs, rowNum) -> toCustomer(rs));
+                    .queryForObject(FIND_BY_ID_QUERY, (rs, rowNum) -> toCustomer(rs), id);
             return Optional.of(customer);
         } catch (EmptyResultDataAccessException ex) {
             return Optional.empty();
