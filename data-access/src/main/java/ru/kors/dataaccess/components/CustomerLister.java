@@ -7,17 +7,23 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 import ru.kors.dataaccess.model.Customer;
+import ru.kors.dataaccess.model.CustomerDTO;
+import ru.kors.dataaccess.repository.CustomerDAO;
 import ru.kors.dataaccess.repository.CustomerRepository;
+
+import java.util.List;
 
 @Component
 public class CustomerLister implements ApplicationRunner {
     private final Logger logger = LoggerFactory.getLogger(CustomerLister.class);
     private final JdbcTemplate jdbcTemplate;
     private final CustomerRepository repository;
+    private final CustomerDAO customerDAO;
 
-    public CustomerLister(JdbcTemplate jdbcTemplate, CustomerRepository repository) {
+    public CustomerLister(JdbcTemplate jdbcTemplate, CustomerRepository repository, CustomerDAO customerDAO) {
         this.jdbcTemplate = jdbcTemplate;
         this.repository = repository;
+        this.customerDAO = customerDAO;
     }
 
     @Override
@@ -31,5 +37,12 @@ public class CustomerLister implements ApplicationRunner {
 //        repository.save(customer);
         repository.findAll().forEach(c -> logger.info("{}", c));
         repository.removeById(7L);
+
+        customerDAO.deleteAll();
+        var cs1 = new CustomerDTO("First Customer", "test1@email.com");
+        var cs2 = new CustomerDTO("Second Customer", "test2@email.com");
+        var cs3 = new CustomerDTO("Third Customer", "test3@email.com");
+        customerDAO.saveAll(List.of(cs1, cs2, cs3));
+        customerDAO.findAll().forEach(cust -> logger.info("{}", cust));
     }
 }
